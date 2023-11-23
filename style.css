@@ -7,6 +7,8 @@
     list-style: none;
     text-decoration: none;
 }
+
+
 header{
     position: fixed;
     width: 100%;
@@ -17,13 +19,12 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
+    background-color: white;
 }
 .logo img{
-    max-width: 350px;
     background-position: center;
     height: auto;
-   
-    
+    width: 100px;
 }
 .navmenu{
     display: flex;
@@ -32,7 +33,7 @@ header{
     color: #2c2c2c;
     font-size: 16px;
     text-transform: capitalize;
-    padding: 10px 20px;
+    padding: 20px;
     font-weight: 400;
     transition: all .42s ease;
 }
@@ -61,7 +62,7 @@ section{
 .main-home{
     width: 100%;
     height: 80vh;
-    background-image: url(images/banner.png);
+    background-image: url(images/Banner.01.jpg);
     background-position: center;
     background-size: cover;
     display: grid;
@@ -277,7 +278,7 @@ header.sticky{
     gap: 3rem;
 }
 .first-info img{
-    width: 140px;
+    width: 150px;
     height: auto;
 }
 .contact-info h4{
@@ -324,6 +325,7 @@ header.sticky{
     header{
         padding: 20px 3%;
         transition: .4s;
+        float: right;
     }
 }
 @media(max-width:630px){
@@ -354,13 +356,16 @@ header.sticky{
         align-items: center;
         padding: 120px 30px;
         transition: all .42s;
+        float: right;
     }
     .navmenu a{
         display: block;
         margin: 18px 0;
+        float: right;
     }
     .navmenu.open{
         right: 0;
+        float: right;
     }
 }
 
