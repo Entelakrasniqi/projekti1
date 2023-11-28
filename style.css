@@ -8,7 +8,6 @@
     text-decoration: none;
 }
 
-
 header{
     position: fixed;
     width: 100%;
@@ -18,25 +17,29 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
-    background-color: white;
+    padding: 20px 5%;
+
 }
 .logo img{
-    background-position: center;
     height: auto;
-    width: 100px;
+    max-width: 180px;
+    
 }
 .navmenu{
     display: flex;
+    
 }
 .navmenu a{
     color: #2c2c2c;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize;
     padding: 20px;
     font-weight: 400;
     transition: all .42s ease;
 }
+  .navmenu a:hover{
+    color: #EE1C47;
+  }
 
 .nav-icon{
     display: flex;
@@ -45,13 +48,17 @@ header{
 .nav-icon i{
     margin-right: 20px;
     color: #2c2c2c;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     transition: all .42s ease;
 }
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EE1C47;
+}
 
 #menu-icon{
-    font-size: 35px;
+    font-size: 26px;
     color: #2c2c2c;
     z-index: 10001;
     cursor: pointer;
@@ -62,29 +69,24 @@ section{
 .main-home{
     width: 100%;
     height: 80vh;
-    background-image: url(images/Banner.01.jpg);
+    background-image: url(images/banner.jpg);
     background-position: center;
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
-.main-text h5{
-    color: #ece9e9;
-    font-size: 32px;
-    text-transform: capitalize;
-    font-weight: 500;
-}
+    
 .main-text h1{
     color: #faf2f2;
-    font-size: 65px;
+    font-size: 60px;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600;
     margin: 6px 0 10px;
 }
 .main-text p{
-    color: #f1f2f6;
+    color: #000000;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
@@ -125,7 +127,7 @@ section{
 }
 header.sticky{
     background: #fff;
-    padding: 20px 10%;
+    padding: 10px 10%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
@@ -136,12 +138,13 @@ header.sticky{
     text-align: center;
     margin-bottom: 30px;
 }
+.center-text span{
+    color: #EE1C47;
+}
 .products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 2rem;
-    
-
 }
 
 .row{
@@ -156,18 +159,7 @@ header.sticky{
 .row img:hover{
     transform: scale(0.9);
 }
-.product-text h5{
-    position: absolute;
-    top: 13px;
-    left: 13px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #27b737;
-    padding: 3px 10px;
-    border-radius: 2px;
-}
+
 .heart-icon{
     position: absolute;
     right: 0;
@@ -176,10 +168,7 @@ header.sticky{
 .heart-icon:hover{
     color: #EE1C47;
 }
-.ratting i{
-    color: #FF8C00;
-    font-size: 18px;
-}
+
 .price h4{
     color: #111;
     font-size: 13px;
@@ -191,41 +180,6 @@ header.sticky{
     font-size: 14px;
     font-weight: 600;
 }
-.client-reviews{
-    background-color: #F3F4F6;
-}
-.reviews{
-    text-align: center;
-}
-.reviews h3{
-    color: #111;
-    font-size: 25px;
-    text-transform: capitalize;
-    text-align: center;
-    font-weight: 700;
-}
-.reviews img{
-    width: 100px;
-    height: auto;
-    border-radius: 50px;
-    margin: 10px 0;
-}
-.reviews p{
-    color: #707070;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    margin-bottom: 10px;
-}
-.reviews h2{
-    font-size: 22px;
-    color: #000;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-bottom: 2px;
-}
-
-
 .up-center-text h2{
     text-align: center;
     color: #111;
@@ -235,25 +189,27 @@ header.sticky{
     margin-bottom: 30px;
 }
 .cart img{
-    width: 380px;
+    width: 520px;
     height: auto;
     border-radius: 5px;
+    transition: all .40s;
 }
 .update-cart{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(520px, auto));
     gap: 1rem;
+
 }
-.cart h5{
-    color: #636872;
-    font-size: 14px;
-    text-transform: capitalize;
-    font-weight: 500;
+.cart img:hover{
+    transform: scale(0.9);
 }
+
+
 .cart h4{
     color: #111;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 300;
 }
 .cart p{
     color: #707070;
@@ -262,12 +218,11 @@ header.sticky{
     line-height: 25px;
     margin-bottom: 12px;
 }
-.cart h6{
+.cart h5{
     color: #151515;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
-
 
 .contact{
     background-color: #f3f4f6;
@@ -321,11 +276,11 @@ header.sticky{
 
 
 
-@media(max-width:600px){
+@media(max-width:890px){
     header{
         padding: 20px 3%;
         transition: .4s;
-        float: right;
+
     }
 }
 @media(max-width:630px){
@@ -356,16 +311,68 @@ header.sticky{
         align-items: center;
         padding: 120px 30px;
         transition: all .42s;
-        float: right;
     }
     .navmenu a{
         display: block;
         margin: 18px 0;
-        float: right;
     }
     .navmenu.open{
         right: 0;
-        float: right;
     }
+
+
+
+    .product {
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+    
+    .product img {
+        transition: 0.3s all;
+    }
+    
+    .product:hover img {
+        opacity: 0.7;
+    }
+    
+    .product .buy-btn {
+        background: #fb774b;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    
+    .product:hover .buy-btn {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    #banner {
+        background-image: url("img/banner/2.jpg");
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: top 70px center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #banner h4 {
+        color: #D8D8D8;
+    }
+    
+    #banner h1 {
+        color: #fff;
+    }
+    
+    #banner button {
+        background-color: #fb774b;
+    }
+    
+   
 }
 
