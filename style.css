@@ -59,7 +59,7 @@ header{
     cursor: pointer;
 }
 section{
-    padding: 10% 10%;
+    padding: 5% 10%;
 }
 .main-home{
     width: 100%;
@@ -71,19 +71,14 @@ section{
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
-.main-text h5{
-    color: #EE1C47;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 500;
-}
+
 .main-text h1{
     color: #faf2f2;
     font-size: 55px;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600;
-    margin: 6px 0 15px;
+    margin: 10px 0 12px;
 }
 .main-text p{
     color: #333c56;
@@ -131,6 +126,8 @@ header.sticky{
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
+
+
 /* trending-section-css */
 .center-text h2{
     color: #111;
@@ -156,7 +153,6 @@ header.sticky{
     height: auto;
     transition: all .40s;
 }
-
 .row img:hover{
     transform: scale(0.9);
 }
@@ -326,8 +322,9 @@ header.sticky{
     }
 }
 
+
 /* Grid and layout styles */
-.products {
+.produktet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -336,7 +333,9 @@ header.sticky{
 .produkti1{
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
+
 
 /* Text content styles */
 .teksti{
@@ -345,6 +344,7 @@ header.sticky{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
+    margin-top: 60px;
 }
 
 .teksti h6 {
@@ -360,9 +360,11 @@ header.sticky{
 }
 
 .teksti h2 {
-    font-size: 28px;
-    color: #ff6600;
-    margin-bottom: 10px;
+    color: #707070;
+    font-size: 18px;
+    max-width: 380px;
+    line-height: 20px;
+    margin-bottom: 12px;
 }
 
 .teksti select {
@@ -371,8 +373,12 @@ header.sticky{
 }
 
 .teksti input[type="number"] {
-    padding: 8px;
-    margin-bottom: 15px;
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 .teksti button.buy-btn1 {
@@ -397,7 +403,7 @@ header.sticky{
 }
 
 .teksti span {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     line-height: 1.6;
 }
@@ -407,6 +413,7 @@ header.sticky{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .small-images{
@@ -468,3 +475,5 @@ header.sticky{
   .product:hover .buy-btn {
     display: block;
   }
+
+

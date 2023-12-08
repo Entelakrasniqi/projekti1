@@ -43,7 +43,7 @@
     </header>
 
     <section class="container sproduct my-5 pt-5">
-        <div class="row products">
+        <div class="row produktet">
             <div class="produkti1">
                 <img class="img-fluid w-100 pb-1" src="images/img.24.jpg" id="pimg" alt="">
                 <div class="small-images-group">
@@ -85,9 +85,6 @@
             </div>
             
     </section>
-
-
-
     <section id="featured" class="my-6 pb-6">
         <div class="container text-center mt-6 py-6">
             <h3>Related Products</h3>
@@ -97,8 +94,8 @@
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="images/product2.jpg">
                 <div class="price">
-                    <h4>OUBLE-FACED JACKET/h4>
-                        <p>£129.90</p>
+                    <h4>OUBLE-FACED JACKET</h4>
+                        <p>£99.90</p>
                 </div>
                 <button class="buy-btn">Buy Now</button>
             </div>
@@ -106,7 +103,7 @@
                 <img class="img-fluid mb-3" src="images/product4.jpg">
                 <div class="price">
                     <h4>WATER AND WIND PROTECTION</h4>
-                    <p>£129.90</p>
+                    <p>£112.90</p>
                 </div>
                 <button class="buy-btn">Buy Now</button>
             </div>
@@ -122,7 +119,7 @@
                 <img class="img-fluid mb-3" src="images/product3.jpg" alt="">
                 <div class="price">
                     <h4>RUBBERISED WIND PROTECTION ANORAK</h4>
-                    <p>£129.90</p>
+                    <p>£115.90</p>
                 </div>
                 <button class="buy-btn">Buy Now</button>
             </div>
@@ -176,7 +173,18 @@
         <p>Copyright © @2023. All Rights Reserved.Designed By Entela Krasniqi&Dion Rexhepi.</p>
     </div>
     <script src="java.js"></script>
-    <script src="javascript.js"></script>
+    <script>
+        const mainImage = document.getElementById('pimg');
+const smallImages = document.querySelectorAll('.small-img');
+
+smallImages.forEach((smallImg) => {
+    smallImg.addEventListener('click', () => {
+        mainImage.src = smallImg.src;
+
+    });
+});
+
+    </script>
 
 
 </body>

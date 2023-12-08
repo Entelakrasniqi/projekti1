@@ -12,12 +12,5 @@ menu.onclick = () => {
     navmenu.classList.toggle('open');
 }
 
-const mainImage = document.getElementById('pimg');
-const smallImages = document.querySelectorAll('.small-img');
 
-smallImages.forEach((smallImg) {
-    smallImg.addEventListener('click', (){
-        mainImage.src = smallImg.src;
 
-    });
-})
