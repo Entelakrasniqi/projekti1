@@ -12,17 +12,12 @@ menu.onclick = () => {
     navmenu.classList.toggle('open');
 }
 
-let i=0;
-let imgArray=['banner2.jpg','Banner.01.jpg'];
+const mainImage = document.getElementById('pimg');
+const smallImages = document.querySelectorAll('.small-img');
 
-function changeImg(){
-    document.getElementById('slideshow').src=imgArray[i];
-    if(i < imgArray.length - 1){
-i++;
-    }
-   else{
-    i=0;
-   }
-}
+smallImages.forEach((smallImg) {
+    smallImg.addEventListener('click', (){
+        mainImage.src = smallImg.src;
 
-document.addEventListener(onload, changeImg);
+    });
+})
