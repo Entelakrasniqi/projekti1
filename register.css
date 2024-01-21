@@ -1,0 +1,52 @@
+body {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formMain {
+    display: flex;
+
+    padding: 0rem 2rem 2rem;
+    margin: auto;
+
+    border: 2px solid #000;
+}
+
+#formMain form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#formMain form input {
+    border: 1px solid #000;
+}
+
+form h1 {
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 3px solid #000;
+    
+    margin-bottom: 1rem;
+}
+
+.end-text {
+    margin-top: auto;
+}
+
+#submitForm {
+    margin-top: 1rem;
+    background-color: transparent;
+
+    border: 1px solid #000;
+}
+
+#submitForm:hover {
+    cursor: pointer;
+
+    background-color: #000;
+    color: white;
+}
