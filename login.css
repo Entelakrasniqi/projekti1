@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh; /* Lartësia minimale e trupit të dokumentit në tërë ekranin (viewport) */
+    display: flex; /* Përdor flexbox layout */
+    flex-direction: column; /* Vendos drejtimin e fleksit në vertikale */
+}
+
+/* Stili për div-in me id "formMain" */
+#formMain {
+    display: flex; /* Përdor flexbox layout */
+
+    padding: 0rem 2rem 2rem; /* Shto Padding përreth div-it */
+    margin: auto; /* Vendos marginën në auto për pozicionim horizontal të div-it */
+
+    border: 2px solid #000; /* Shto kufi me 2 piksela ngjyrë të zeze */
+}
+
+/* Stili për formën brenda div-it "formMain" */
+#formMain form {
+    display: flex; /* Përdor flexbox layout */
+    flex-direction: column; /* Vendos drejtimin e fleksit në vertikale */
+    justify-content: space-between; /* Vendos hapësirë ndërmjet elementeve të brendshme të formës */
+    width: 100%; /* Vendos gjeresinë e formës në 100% të prindit (div-it "formMain") */
+}
+
+/* Stili për input-et brenda formës */
+#formMain form input {
+    border: 1px solid #000; /* Shto kufir me 1 piksel ngjyrë të zeze për input-et */
+}
+
+/* Stili për titullin h1 në formë */
+form h1 {
+    text-align: center; /* Qendro tekstin në qendër */
+    font-weight: 600; /* Cakto peshën e shkronjave si e trashë (600) */
+    border-bottom: 3px solid #000; /* Shto linjën nën titull me 3 piksela ngjyrë të zeze */
+
+    margin-bottom: 2rem; /* Shto zbraztësirë poshtë titullit */
+}
+
+/* Stili për tekstin në fund të faqes */
+.end-text {
+    margin-top: auto; /* Vendos marginën lart në auto për pozicionim vertical të tekstit në fund */
+}
+
+/* Stili për butonin me id "submitForm" */
+#submitForm {
+    margin-top: 1rem; /* Shto zbraztësirë lart të butonit */
+    background-color: transparent; /* Vendos ngjyrën e sfondit të butonit si transparente */
+
+    border: 1px solid #000; /* Shto kufir me 1 piksel ngjyrë të zeze për butonin */
+}
+
+/* Efekti hover për butonin */
+#submitForm:hover {
+    cursor: pointer; /* Shfaq cursor-in si një shigjetë që tregon se mund të klikohet */
+
+    background-color: #000; /* Ndërro ngjyrën e sfondit në ngjyrë të zeze kur hoverohet */
+    color: white; /* Ndërro ngjyrën e tekstit në bardhë kur hoverohet */
+}

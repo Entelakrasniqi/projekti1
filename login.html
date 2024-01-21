@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Koka e dokumentit -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Stilizimi i faqes -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Fontet nga Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ikona nga Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Ikona nga Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <!-- Koka e faqes -->
+    <header>
+        <!-- Logoja -->
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+        <!-- Menyja e navigimit -->
+        <ul class="navmenu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="product.html">products</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <!-- Ikona dhe opsionet e përdoruesit -->
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a  href="login.html"><i class='bx bx-user'></i></a>
+                
+                <!-- Përmbajtja e menysë së përdoruesit -->
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+            <!-- Ikona e menysë së përdoruesit -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Forma për regjistrim -->
+    <div id="formMain">
+        <form action="POST">
+            <h1>Register</h1>
+
+            <!-- Fushat për regjistrim -->
+            <label for="nameForm">Emri:</label>
+            <input type="text" name="name" id="nameForm">
+
+            <label for="lastNameForm">Mbiemri:</label>
+            <input type="text" name="lastName" id="lastNameForm">
+
+            <label for="emailForm">Email:</label>
+            <input type="email" name="email" id="emailForm">
+
+            <label for="passwordForm">Fjalëkalimi:</label>
+            <input type="password" name="password" id="passwordForm">
+            
+            <button id="submitForm" type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Teksti në fund të faqes -->
+    <div class="end-text">
+        <p>Copyright © @2023. Të gjitha të drejtat e rezervuara. Dizajnuar nga Entela Krasniqi & Dion Rexhepi.</p>
+    </div>
+    
+    <!-- Skripti për logjikën e login -->
+    <script src="login.js"></script>
+    
+</body>
+</html>
